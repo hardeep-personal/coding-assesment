@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-container {
+  max-width: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading>h1 {
+  padding: 50px 0px 25px 0px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.nav-container {
+  display: grid;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: rgba(242, 242, 242, 1);
+
+
+}
+
+.nav-container>button {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px 0;
+  color: black;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.active-btn {
+  font-size: 16px;
+  background-color: black;
+  padding: 15px 0;
+  color: white !important;
+  border-radius: 5px;
+  border-style: none;
+}
+
+
+.card-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:20px 20px;
+}
+
+
+.card-parent{
+
+}
+.img-child{
+  position: relative;
+}
+.btn-on-img{
+  position: absolute;
+  top: 0;
+}
+.btn-on-img>button{
+  margin: 5px;
+  background: rgba(255, 255, 255, 1);
+  padding: 10px 15px;
+  color: black !important;
+  border-radius: 5px;
+  font-weight: 600;
+  border-style: none;
+}
+.img-child>img{
+  width: 100%;
+  height: 300px;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+
+.wear-type-and-name-container{
+  display: flex;
+  align-items: center;
+
+}
+.wear-type{
+  font-weight: 600;
+  font-size: 24px;
+}
+.dot{
+  height: 7px;
+  width: 7px;
+  margin: 0 15px;
+  border-radius:50%;
+  background: black;
+}
+.price-container{
+  padding: 8px 0;
+  display: flex;
+
+}
+.offer-price{
+  font-weight: 600;
+}
+.price{
+  font-weight: 600;
+  color: rgba(143, 143, 143, 1);
+  text-decoration: line-through;
+  margin: 0 15px;
+}
+.discount{
+  color: rgba(255, 55, 55, 1);
+  font-weight: 600;
+}
+.add-to-cart-btn{
+  font-size: 16px;
+  background-color: black;
+  padding: 15px 0;
+  color: white !important;
+  border-radius: 5px;
+  border-style: none;
+  width: 100%;
+
+}
+.truncate {
+  overflow: hidden;
+}
+.no-badge {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .card-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:20px 20px;
+  }
+  
+}
+
+@media screen and (max-width: 776px) {
+  .card-section{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap:20px 20px;
+  }
+  
+}
